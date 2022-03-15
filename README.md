@@ -105,4 +105,4 @@ Payload: wasp-os/bootloader.hex (P8b variant)
 
 - `wasp-os` at [daniel-thompson/wasp-os](https://github.com/daniel-thompson/wasp-os)
 
-- `DaFlasherFiles` at atc1441/DaFlasherFiles.git](https://github.com/atc1441/DaFlasherFiles.git)
+- `DaFlasherFiles` at [atc1441/DaFlasherFiles.git](https://github.com/atc1441/DaFlasherFiles.git)
