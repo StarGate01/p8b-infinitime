@@ -1,0 +1,14 @@
+[submodule "pinetime-mcuboot-bootloader"]
+	path = pinetime-mcuboot-bootloader
+	url = https://github.com/StarGate01/pinetime-mcuboot-bootloader.git
+	branch = p8b
+[submodule "InfiniTime"]
+	path = InfiniTime
+	url = https://github.com/StarGate01/InfiniTime.git
+	branch = p8b
+[submodule "wasp-os"]
+	path = wasp-os
+	url = https://github.com/daniel-thompson/wasp-os.git
+[submodule "DaFlasherFiles"]
+	path = DaFlasherFiles
+	url = https://github.com/atc1441/DaFlasherFiles.git
