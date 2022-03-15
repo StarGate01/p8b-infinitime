@@ -6,8 +6,8 @@ This repository contains some slightly adjusted versions of the Infinitime appli
 
 Requirements for compilation:
 
-- Linux + GCC + Build-essentials
-- Git + Bash
+- Linux
+- GCC, Build-essentials, Git, Bash, Wget, Unzip
 - ARM Cortex toolchain
 - NRF52 tools
 - Apache Mynewt Newt

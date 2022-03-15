@@ -11,3 +11,5 @@ newt upgrade
 
 cd ../wasp-os
 pip3 install --user -r wasp/requirements.txt
+make submodules
+make softdevice
