@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd "${0%/*}"
+
 cd ../InfiniTime
 mkdir -p build
 cd build

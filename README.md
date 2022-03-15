@@ -7,21 +7,18 @@ This repository contains some slightly adjusted versions of the Infinitime appli
 Requirements for compilation:
 
 - Linux + GCC + Build-essentials
+- Git + Bash
 - ARM Cortex toolchain
-- NRF52 toolchain
-- Apache newt
+- NRF52 tools
+- Apache Mynewt Newt
 - CMake
 - Python3 + Pip3
 
-Clone with recursive submodules or run `git submodule update --init --recursive`.
-
-Run `newt upgrade` in `pinetime-mcuboot-bootloader` directory.
-
-Run `pip3 install --user -r wasp/requirements.txt` in the `wasp-os` directory.
+Run `scripts/init.sh` to set up the repositories. This clones all the submodules, and downloads the newt and python packages. This might take a while, there are a lot of submodules.
 
 ## Compiling
 
-Use the scripts in `scripts/`. First compile InfiniTime and mcuboot, and then compile wasp-os. The Wasp reloader factory package will package the builds of mcuboot and the Infinitime minimal recovery loader.
+Use the scripts in `scripts/`. First compile InfiniTime (`build_infinitime.sh`) and mcuboot  (`build_mcuboot.sh`), and then compile wasp-os (`build_wasp.sh`). The Wasp reloader factory package will package the builds of mcuboot and the Infinitime minimal recovery loader.
 
 ## OTA Stock Upgrade Path:
 
@@ -46,7 +43,7 @@ Step 3
 Step 4
 
 - State: Wasp-OS Bootloader (Wasp image)
-- Process: DFU update using dfu.py or NrfConnect (or DaFlasher?)
+- Process: DFU update using dfu.py (`scripts/load_wasp_reloader.sh`) or NrfConnect (or DaFlasher?)
 - Payload: `wasp-os/build-p8/reloader-factory.zip` (P8b variant w/ mcuboot & Infinitime recovery loader)
 
 Step 5
