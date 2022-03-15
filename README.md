@@ -2,6 +2,10 @@
 
 This repository contains some slightly adjusted versions of the Infinitime application, bootloader and reloader (based on wasp-os), to run on the P8b smartwatch.
 
+### P8a vs P8b
+
+The (at least the one I have) P8b uses a different SPI flash chip, which will crash the bootloader when compiled for the P8a. In addition, the display driver is a bit different.
+
 ## Download Binaries
 
 If you don't want to compile the firmware yourself, you can download binaries on the [release page](https://github.com/StarGate01/p8b-infinitime/releases).
