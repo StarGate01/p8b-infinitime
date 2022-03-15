@@ -22,6 +22,8 @@ Use the scripts in `scripts/`. First compile InfiniTime (`build_infinitime.sh`) 
 
 ## OTA Stock Upgrade Path:
 
+**Do this at your own risk**
+
 Step 1
 
 - State: Stock P8b (Stock)
@@ -83,6 +85,8 @@ Step 11
 - Process: Verify firmware works, and then confirm firmware valid in settings. (Important, otherwise bootloader reverts to recovery)
 
 ## SWD Flash Path:
+
+**Do this at your own risk**
 
 For OTA
 
