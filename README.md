@@ -2,6 +2,10 @@
 
 This repository contains some slightly adjusted versions of the Infinitime application, bootloader and reloader (based on wasp-os), to run on the P8b smartwatch.
 
+## Download Binaries
+
+If you don't want to compile the firmware yourself, you can download binaries on the [release page](https://github.com/StarGate01/p8b-infinitime/releases).
+
 ## Development Setup
 
 Requirements for compilation:
