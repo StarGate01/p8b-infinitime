@@ -84,9 +84,17 @@ Step 11
 
 ## SWD Flash Path:
 
-State: Broken or empty
-Process: Open watch, flash using SWD, eg. J-Link, then continue from wasp-bootloader
-Payload: wasp-os/bootloader.hex (P8b variant)
+For OTA
+
+- State: Broken or empty
+- Process: Open watch, flash using SWD, eg. J-Link, then continue from wasp-bootloader
+- Payload: `wasp-os/build-p8/bootloader.hex` (P8b variant)
+
+For Development
+
+- State: Development on InfiniTime
+- Process: Open watch, flash using SWD, eg. J-Link
+- Payload: `InfiniTime/build/src/pinetime-app-1.3.0.hex` (P8b variant without bootloader)
 
 ## TODO
 
