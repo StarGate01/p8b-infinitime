@@ -1,0 +1,19 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "InfiniTime Debug",
+            "cwd": "${workspaceRoot}/InfiniTime",
+            "executable": "./build/src/pinetime-app-1.3.0.out",
+            "request": "launch",
+            "type": "cortex-debug",
+            "showDevDebugOutput": false,
+            "servertype": "jlink",
+            "device": "nRF52832_xxAA"
+        },
+
+    ]
+}

@@ -111,7 +111,7 @@ For Development
 ## TODO
 
 - Verify OTA process on sealed watch
-- Power analysis (Synth LF clock?)
+- Use LFRC clock instead of SYNT on variants without external LF crystal
 - Verify acceleration sensor
 - ~Update mcuboot to latest~ done
 - Update Infinitime to latest (requires touch driver improvements)
