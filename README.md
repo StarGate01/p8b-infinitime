@@ -22,7 +22,7 @@ Requirements for compilation:
 - CMake
 - Python3 + Pip3
 
-Run `scripts/init.sh` to set up the repositories. This clones all the submodules, and downloads the newt and python packages. This might take a while, there are a lot of submodules.
+Run `scripts/init.sh` to set up the repositories, do not clone this repo with all recursive submodules. This loads all the required submodules, and downloads the newt and python packages.
 
 ## Compiling
 
@@ -79,7 +79,7 @@ Step 8
 Step 9
 
 - State: Infinitime recovery (Triangle without progress bar)
-- Process: DFU update using NRFConnect or GadgetBridge (or DaFlasher?)
+- Process: DFU update using dfu.py (`scripts/load_infinitime.sh`) or NRFConnect or GadgetBridge (or DaFlasher?)
 - Payload: `InfiniTime/build/src/pinetime-mcuboot-app-dfu-1.3.0.zip`
 
 Step 10
@@ -116,6 +116,13 @@ For Development
 - ~Update mcuboot to latest~ done
 - Update Infinitime to latest (requires touch driver improvements)
 
+## LFCLK and missing LF crystals
+
+The P8b watch comes without an external low frequency crystal. This is a problem, because precise timing is required for Bluetooth connections. However, the NRF52 can be configured to use its internal RC clock to generate the low frequency clock.
+
+The wasp-os bootloader as well as the mcuboot bootloader are configured to use this LFRC source. Wasp-os uses the Nordic softdevice, which takes care of properly configuring and calibrating the LF RC source. Mcuboot does not perform any calibration, however it does not require Bluetooth at all.
+
+Usage of LFRC in InfiniTime is under ongoing research.
 
 ## Third-party modules & Thanks to
 

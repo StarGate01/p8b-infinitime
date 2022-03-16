@@ -10,4 +10,6 @@ cd ../wasp-os/reloader
 make -j$(nproc) BOARD=p8 build-p8/reloader-factory.zip
 
 cd ..
-make -j$(nproc) BOARD=p8 all
+make -j$(nproc) BOARD=p8 reloader
+
+rm reloader/src/boards/p8/factory_image.h
