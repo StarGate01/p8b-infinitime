@@ -5,7 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "InfiniTime Debug",
+            "name": "Wasp Bootloader",
+            "cwd": "${workspaceRoot}/wasp-os/bootloader",
+            "executable": "./_build-p8_nrf52832/p8_nrf52832_bootloader-0.3.0-39-g357b9a5-dirty-nosd.out",
+            "request": "launch",
+            "type": "cortex-debug",
+            "showDevDebugOutput": false,
+            "servertype": "jlink",
+            "device": "nRF52832_xxAA"
+        },
+        {
+            "name": "InfiniTime",
             "cwd": "${workspaceRoot}/InfiniTime",
             "executable": "./build/src/pinetime-app-1.3.0.out",
             "request": "launch",
