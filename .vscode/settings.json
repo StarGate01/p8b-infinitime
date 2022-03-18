@@ -1,4 +1,8 @@
 {
     "git.detectSubmodules": false,
-    "git.autoRepositoryDetection": "openEditors"
+    "git.autoRepositoryDetection": "openEditors",
+    "files.associations": {
+        "log_common.h": "c",
+        "syscfg.h": "c"
+    }
 }
