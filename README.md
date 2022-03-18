@@ -4,7 +4,7 @@ This repository contains some slightly adjusted versions of the Infinitime appli
 
 ### P8a vs P8b
 
-The (at least the one I have) P8b uses a different SPI flash chip, which will crash the bootloader when compiled for the P8a. In addition, the display driver is a bit different.
+The (at least the one I have) P8b uses a different SPI flash chip. The bootloader is configured to accept either chip. In addition, the touch driver is a bit different, which is why InfiniTime 1.3 is used, as >=1.4 uses a new driver software model which is not compatible yet.
 
 ## Download Binaries
 
@@ -111,7 +111,7 @@ For Development
 ## TODO
 
 - Verify OTA process on sealed watch
-- Use LFRC clock instead of SYNT on variants without external LF crystal
+- ~Use LFRC clock instead of SYNT on variants without external LF crystal~ done
 - Verify acceleration sensor
 - ~Update mcuboot to latest~ done
 - Update Infinitime to latest (requires touch driver improvements)
@@ -122,7 +122,7 @@ The P8b watch comes without an external low frequency crystal. This is a problem
 
 The wasp-os bootloader as well as the mcuboot bootloader are configured to use this LFRC source. Wasp-os uses the Nordic softdevice, which takes care of properly configuring and calibrating the LF RC source. Mcuboot does not perform any calibration, however it does not require Bluetooth at all.
 
-Usage of LFRC in InfiniTime is under ongoing research.
+Usage of the LFRC source in InfiniTime and its Nimble stack is now implemented with proper calibration in my p8b fork.
 
 ## Third-party modules & Thanks to
 
