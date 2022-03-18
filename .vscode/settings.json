@@ -3,6 +3,7 @@
     "git.autoRepositoryDetection": "openEditors",
     "files.associations": {
         "log_common.h": "c",
-        "syscfg.h": "c"
+        "syscfg.h": "c",
+        "core_cm4.h": "c"
     }
 }
