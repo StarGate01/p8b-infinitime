@@ -7,7 +7,7 @@
         {
             "name": "InfiniTime",
             "cwd": "${workspaceRoot}/InfiniTime",
-            "executable": "./build/src/pinetime-app-1.3.0.out",
+            "executable": "./build/src/pinetime-app-1.8.0.out",
             "request": "launch",
             "type": "cortex-debug",
             "servertype": "jlink",
