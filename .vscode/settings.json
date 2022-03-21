@@ -85,5 +85,6 @@
         "typeinfo": "cpp",
         "valarray": "cpp",
         "variant": "cpp"
-    }
+    },
+    "cortex-debug.variableUseNaturalFormat": false
 }
