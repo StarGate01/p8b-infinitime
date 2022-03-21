@@ -4,7 +4,9 @@ This repository contains some slightly adjusted versions of the Infinitime appli
 
 ### P8a vs P8b
 
-The (at least the one I have) P8b uses a different SPI flash chip. The bootloader is configured to accept either chip. In addition, the touch driver is a bit different, which is why InfiniTime 1.3 is used, as >=1.4 uses a new driver software model which is not compatible yet.
+The (at least the one I have) P8b uses a different SPI flash chip. The bootloader is configured to accept either chip. 
+
+In addition, the touch driver is a bit different. This fork automatically detects which driver is used and adjusts its logic accordingly. The P8b touch driver cannot wake up from sleep mode, so instead the accelerometer is used to detect taps and double taps to wake up.
 
 ## Download Binaries
 
@@ -27,6 +29,8 @@ Run `scripts/init.sh` to set up the repositories, do not clone this repo with al
 ## Compiling
 
 Use the scripts in `scripts/`. First compile InfiniTime (`build_infinitime.sh`) and mcuboot  (`build_mcuboot.sh`), and then compile wasp-os (`build_wasp.sh`). The Wasp reloader factory package will package the builds of mcuboot and the Infinitime minimal recovery loader.
+
+Internally, Infinitime is compiled with these additional arguments: `-DTARGET_DEVICE=P8 -DLF_CLK=RC -DDRIVER_ACC=SC7A20`. Yuu can change them in `build_infinitime.sh` if your smartwatch has a different hardware configuration.
 
 ## OTA Stock Upgrade Path:
 
@@ -80,7 +84,7 @@ Step 9
 
 - State: Infinitime recovery (Triangle without progress bar)
 - Process: DFU update using dfu.py (`scripts/load_infinitime.sh`) or NRFConnect or GadgetBridge (or DaFlasher?)
-- Payload: `InfiniTime/build/src/pinetime-mcuboot-app-dfu-1.3.0.zip`
+- Payload: `InfiniTime/build/src/pinetime-mcuboot-app-dfu-1.8.0.zip`
 
 Step 10
 
@@ -106,15 +110,17 @@ For Development
 
 - State: Development on InfiniTime
 - Process: Open watch, flash using SWD, eg. J-Link
-- Payload: `InfiniTime/build/src/pinetime-app-1.3.0.hex` (P8b variant without bootloader)
+- Payload: `InfiniTime/build/src/pinetime-app-1.8.0.hex` (P8b variant without bootloader)
 
 ## TODO
 
 - Verify OTA process on sealed watch
+- Verify drivers on genuine Pinetime
 - ~Use LFRC clock instead of SYNT on variants without external LF crystal~ done
-- Verify acceleration sensor
+- ~Verify acceleration sensor~ done
 - ~Update mcuboot to latest~ done
-- Update Infinitime to latest (requires touch driver improvements)
+- ~Fix wake from sleep~ done
+- ~Update Infinitime to latest (requires touch driver improvements)~ done
 
 ## LFCLK and missing LF crystals
 
