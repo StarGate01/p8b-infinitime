@@ -28,9 +28,11 @@ Run `scripts/init.sh` to set up the repositories, do not clone this repo with al
 
 ## Compiling
 
-Use the scripts in `scripts/`. First compile InfiniTime (`build_infinitime.sh`) and mcuboot  (`build_mcuboot.sh`), and then compile wasp-os (`build_wasp.sh`). The Wasp reloader factory package will package the builds of mcuboot and the Infinitime minimal recovery loader.
+Use the scripts in `scripts/`, run `build_all.sh p8` to build all the firmware for the P8 watch. The Wasp reloader factory package will package the builds of mcuboot and the Infinitime minimal recovery loader.
 
-Internally, Infinitime is compiled with these additional arguments: `-DTARGET_DEVICE=P8 -DLF_CLK=RC -DDRIVER_ACC=SC7A20`. Yuu can change them in `build_infinitime.sh` if your smartwatch has a different hardware configuration.
+All scripts accept either `pinetime` or `p8` as the first argument (Default: `pinetime`). This argument configures the target hardware platform.
+
+Internally, Infinitime for the P8 is compiled with these additional arguments: `-DTARGET_DEVICE=P8 -DLF_CLK=RC -DDRIVER_ACC=SC7A20`. You can change them in `build_infinitime.sh` if your smartwatch has a different hardware configuration.
 
 ## OTA Stock Upgrade Path:
 
@@ -57,7 +59,7 @@ Step 3
 Step 4
 
 - State: Wasp-OS Bootloader (Wasp image)
-- Process: DFU update using dfu.py (`scripts/load_wasp_reloader.sh`) or NrfConnect (or DaFlasher?)
+- Process: DFU update using dfu.py (`scripts/load_wasp_reloader.sh p8`) or NrfConnect (or DaFlasher?)
 - Payload: `wasp-os/build-p8/reloader-factory.zip` (P8b variant w/ mcuboot & Infinitime recovery loader)
 
 Step 5

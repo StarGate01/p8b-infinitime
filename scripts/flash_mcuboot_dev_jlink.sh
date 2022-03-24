@@ -1,5 +1,7 @@
 #!/bin/bash
 
+TARGET=${1:-pinetime}
+echo "Using target $TARGET"
 cd "${0%/*}"
 
 source ./infinitime_version.sh
@@ -7,4 +9,4 @@ source ./infinitime_version.sh
 nrfjprog --eraseall -f nrf52
 nrfjprog --program ../InfiniTime/build/src/pinetime-mcuboot-app-image-$INFINITIME_VERSION.hex -f nrf52 --sectorerase
 
-nrfjprog --program ../pinetime-mcuboot-bootloader/bin/targets/nrf52_boot/app/@mcuboot/boot/mynewt/mynewt.elf.hex -f nrf52 --sectorerase --reset
+nrfjprog --program ../pinetime-mcuboot-bootloader/bin/targets/$TARGET/app/@mcuboot/boot/mynewt/mynewt.elf.hex -f nrf52 --sectorerase --reset
