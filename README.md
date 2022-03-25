@@ -117,12 +117,13 @@ For Development
 ## TODO
 
 - Verify OTA process on sealed watch
-- Verify drivers on genuine Pinetime
+- ~Verify drivers on genuine Pinetime~ done
 - ~Use LFRC clock instead of SYNT on variants without external LF crystal~ done
 - ~Verify acceleration sensor~ done
 - ~Update mcuboot to latest~ done
 - ~Fix wake from sleep~ done
 - ~Update Infinitime to latest (requires touch driver improvements)~ done
+- Test and adjust to P8a watch
 
 ## LFCLK and missing LF crystals
 
