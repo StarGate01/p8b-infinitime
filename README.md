@@ -50,7 +50,7 @@ Step 1
 
 Step 2
 
-- State: Hacked Bootloader (Three colorful quared)
+- State: Hacked Bootloader (Three colorful squares)
 - Process: DFU update using DaFlasher or NrfConnect
 - Payload: `DaFlasherFiles/FitBootloaderDFU2.0.1.zip`
 
@@ -120,7 +120,7 @@ For Development
 
 ## TODO
 
-- Verify OTA process on sealed watch
+- ~Verify OTA process on sealed watch~ done
 - ~Verify drivers on genuine Pinetime~ done
 - ~Use LFRC clock instead of SYNT on variants without external LF crystal~ done
 - ~Verify acceleration sensor~ done
