@@ -30,6 +30,30 @@
             //"preLaunchTask": "Flash Infinitime Dev"
         },
         {
+            "name": "MCUBoot Bootloader",
+            "cwd": "${workspaceRoot}//pinetime-mcuboot-bootloader",
+            "executable": "./bin/targets/p8/app/@mcuboot/boot/mynewt/mynewt.elf.hex ",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "jlink",
+            "device": "nRF52832_xxAA",
+            "svdFile": "${workspaceRoot}/InfiniTime/nrf52.svd",
+            "armToolchainPath": "/usr/bin",
+            "rtos": "FreeRTOS",
+            "rttConfig":{
+                "enabled": true,
+                "address": "0",
+                "decoders": [
+                    {
+                        "label": "",
+                        "port": 0,
+                        "type": "console",
+                        "timestamp": true
+                    }
+                ]
+            }
+        },
+        {
             "name": "Wasp Bootloader",
             "cwd": "${workspaceRoot}/wasp-os/bootloader",
             "executable": "./_build-p8_nrf52832/p8_nrf52832_bootloader-0.3.0-39-g357b9a5-nosd.out",

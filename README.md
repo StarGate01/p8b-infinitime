@@ -36,6 +36,10 @@ Internally, Infinitime for the P8 is compiled with these additional arguments: `
 
 ## OTA Stock Upgrade Path:
 
+Note: NRF connect sometimes seems to overload the connection, if it fails use another tool listed (or look at https://wiki.pine64.org/wiki/PineTime#Companion_Apps)
+
+In general, sometimes the Bluetooth connection crashes, maybe due to interference. Just try again.
+
 **Do this at your own risk**
 
 Step 1

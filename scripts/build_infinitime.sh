@@ -13,6 +13,8 @@ if [ "$TARGET" = "pinetime" ]; then
     cmake -DTARGET_DEVICE=PINETIME -DLF_CLK=XTAL -DDRIVER_ACC=BMA421 $COMMON_OPTIONS ..
 elif [ "$TARGET" = "p8" ]; then
     cmake -DTARGET_DEVICE=P8 -DLF_CLK=RC -DDRIVER_ACC=SC7A20 $COMMON_OPTIONS ..
+elif [ "$TARGET" = "p8a" ]; then
+    cmake -DTARGET_DEVICE=P8 -DLF_CLK=XTAL -DDRIVER_ACC=BMA421 $COMMON_OPTIONS ..
 fi
 
 make -j$(nproc) pinetime-mcuboot-app pinetime-mcuboot-recovery-loader
