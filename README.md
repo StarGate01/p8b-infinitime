@@ -6,7 +6,7 @@ This repository contains some slightly adjusted versions of the Infinitime appli
 
 The (at least the one I have) P8b uses a different SPI flash chip. The bootloader is configured to accept either chip. 
 
-In addition, the touch driver is a bit different. This fork automatically detects which driver is used and adjusts its logic accordingly. The P8b touch driver cannot wake up from sleep mode, so instead the accelerometer is used to detect taps and double taps to wake up.
+In addition, the touch driver is a bit different. The P8b touch driver cannot wake up from sleep mode, so instead the accelerometer is used to detect taps and double taps to wake up. The touch driver configuration set in the factory may also vary. A compile time variable is provided.
 
 ## Download Binaries
 
@@ -30,9 +30,11 @@ Run `scripts/init.sh` to set up the repositories, do not clone this repo with al
 
 Use the scripts in `scripts/`, run `build_all.sh p8` to build all the firmware for the P8 watch. The Wasp reloader factory package will package the builds of mcuboot and the Infinitime minimal recovery loader.
 
-All scripts accept either `pinetime` or `p8` as the first argument (Default: `pinetime`). This argument configures the target hardware platform.
+All scripts accept either `pinetime` or `p8` (this means P8b) as the first argument (Default: `pinetime`). This argument configures the target hardware platform.
 
-Internally, Infinitime for the P8 is compiled with these additional arguments: `-DTARGET_DEVICE=P8 -DLF_CLK=RC -DDRIVER_ACC=SC7A20`. You can change them in `build_infinitime.sh` if your smartwatch has a different hardware configuration.
+You can change the compile time parameters in `build_infinitime.sh` if your smartwatch has a different hardware configuration.
+
+See the file `HardwareVariants.md` for detailed configuration options for different watches.
 
 ## OTA Stock Upgrade Path:
 
@@ -127,7 +129,8 @@ For Development
 - ~Update mcuboot to latest~ done
 - ~Fix wake from sleep~ done
 - ~Update Infinitime to latest (requires touch driver improvements)~ done
-- Test and adjust to P8a watch
+- ~Test and adjust to P8a watch~ done
+- Implement tap to wake on P8a
 
 ## LFCLK and missing LF crystals
 
