@@ -1,12 +1,12 @@
-# InfiniTime on P8b
+# InfiniTime on P8
 
-This repository contains some slightly adjusted versions of the Infinitime application, bootloader and reloader (based on wasp-os), to run on the P8b smartwatch.
+This repository contains some slightly adjusted versions of the Infinitime application, bootloader and reloader (based on wasp-os), to run on the P8a and P8b smartwatch.
 
 ### P8a vs P8b
 
 The (at least the one I have) P8b uses a different SPI flash chip. The bootloader is configured to accept either chip. 
 
-In addition, the touch driver is a bit different. The P8b touch driver cannot wake up from sleep mode, so instead the accelerometer is used to detect taps and double taps to wake up. The touch driver configuration set in the factory may also vary. A compile time variable is provided.
+In addition, the touch driver is a bit different. The P8 touch driver cannot wake up from sleep mode, so instead the accelerometer is used to detect taps and double taps to wake up. The touch driver configuration set in the factory may also vary. A compile time variable is provided. See the file `HardwareVariants.md` for more info.
 
 ## Download Binaries
 
@@ -30,7 +30,7 @@ Run `scripts/init.sh` to set up the repositories, do not clone this repo with al
 
 Use the scripts in `scripts/`, run `build_all.sh p8` to build all the firmware for the P8 watch. The Wasp reloader factory package will package the builds of mcuboot and the Infinitime minimal recovery loader.
 
-All scripts accept either `pinetime` or `p8` (this means P8b) as the first argument (Default: `pinetime`). This argument configures the target hardware platform.
+All scripts accept either `pinetime`, `p8`, `p8a` or `p8b` as the first argument (Default: `pinetime`). This argument configures the target hardware platform.
 
 You can change the compile time parameters in `build_infinitime.sh` if your smartwatch has a different hardware configuration.
 
