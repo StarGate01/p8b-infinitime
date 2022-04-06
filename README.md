@@ -1,12 +1,16 @@
 # InfiniTime on P8
 
-This repository contains some slightly adjusted versions of the Infinitime application, bootloader and reloader (based on wasp-os), to run on the P8a and P8b smartwatch.
+This repository contains some slightly adjusted versions of the Infinitime application, bootloader and reloader (based on wasp-os), to run on the P8a and P8b (and of course, the PineTime as well) smartwatch.
 
 ### P8a vs P8b
 
 The (at least the one I have) P8b uses a different SPI flash chip. The bootloader is configured to accept either chip. 
 
 In addition, the touch driver is a bit different. The P8 touch driver cannot wake up from sleep mode, so instead the accelerometer is used to detect taps and double taps to wake up. The touch driver configuration set in the factory may also vary. A compile time variable is provided. See the file `HardwareVariants.md` for more info.
+
+# High-Resolution BLE Accelerometer
+
+This firmware fork is able to broadcast the 12-bit accelerometer sensor data using a sampling rate of 200 Hz instead of 10 Hz. A companion Android app to read these values in real-time can be found here: https://github.com/StarGate01/PineTimeAcc .
 
 ## Download Binaries
 
