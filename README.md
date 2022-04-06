@@ -134,7 +134,7 @@ For Development
 - ~Fix wake from sleep~ done
 - ~Update Infinitime to latest (requires touch driver improvements)~ done
 - ~Test and adjust to P8a watch~ done
-- Implement tap to wake on P8a
+- ~Implement tap to wake on P8a~ workaround
 
 ## LFCLK and missing LF crystals
 
