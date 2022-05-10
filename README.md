@@ -8,9 +8,17 @@ The (at least the one I have) P8b uses a different SPI flash chip. The bootloade
 
 In addition, the touch driver is a bit different. The P8 touch driver cannot wake up from sleep mode, so instead the accelerometer is used to detect taps and double taps to wake up. The touch driver configuration set in the factory may also vary. A compile time variable is provided. See the file `HardwareVariants.md` for more info.
 
-# High-Resolution BLE Accelerometer
+### High-Resolution BLE Accelerometer
 
 This firmware fork is able to broadcast the 12-bit accelerometer sensor data using a sampling rate of 200 Hz instead of 10 Hz. A companion Android app to read these values in real-time can be found here: https://github.com/StarGate01/PineTimeAcc .
+
+### LFCLK and missing LF crystals
+
+The P8b watch comes without an external low frequency crystal. This is a problem, because precise timing is required for Bluetooth connections. However, the NRF52 can be configured to use its internal RC clock to generate the low frequency clock.
+
+The wasp-os bootloader as well as the mcuboot bootloader are configured to use this LFRC source. Wasp-os uses the Nordic softdevice, which takes care of properly configuring and calibrating the LF RC source. Mcuboot does not perform any calibration, however it does not require Bluetooth at all.
+
+Usage of the LFRC source in InfiniTime and its Nimble stack is now implemented with proper calibration in my p8b fork.
 
 ## Download Binaries
 
@@ -30,7 +38,7 @@ Requirements for compilation:
 
 Run `scripts/init.sh` to set up the repositories, do not clone this repo with all recursive submodules. This loads all the required submodules, and downloads the newt and python packages.
 
-## Compiling
+### Compiling
 
 Use the scripts in `scripts/`, run `build_all.sh p8` to build all the firmware for the P8 watch. The Wasp reloader factory package will package the builds of mcuboot and the Infinitime minimal recovery loader.
 
@@ -135,14 +143,7 @@ For Development
 - ~Update Infinitime to latest (requires touch driver improvements)~ done
 - ~Test and adjust to P8a watch~ done
 - ~Implement tap to wake on P8a~ workaround
-
-## LFCLK and missing LF crystals
-
-The P8b watch comes without an external low frequency crystal. This is a problem, because precise timing is required for Bluetooth connections. However, the NRF52 can be configured to use its internal RC clock to generate the low frequency clock.
-
-The wasp-os bootloader as well as the mcuboot bootloader are configured to use this LFRC source. Wasp-os uses the Nordic softdevice, which takes care of properly configuring and calibrating the LF RC source. Mcuboot does not perform any calibration, however it does not require Bluetooth at all.
-
-Usage of the LFRC source in InfiniTime and its Nimble stack is now implemented with proper calibration in my p8b fork.
+- Upstream changes to InfiniTime (WIP: https://github.com/InfiniTimeOrg/InfiniTime/pull/1050)
 
 ## Third-party modules & Thanks to
 
