@@ -4,7 +4,9 @@ This repository contains some slightly adjusted versions of the Infinitime appli
 
 ### P8a vs P8b
 
-The (at least the one I have) P8b uses a different SPI flash chip. The bootloader is configured to accept either chip. 
+The P8b has a magnetic charging bay, with the two gold contacts in the center top. The P8a uses a charging clip, with the contacts in the center as well. The PineTime uses a magnetic charging bay, with the contacts shifted to one corner.
+
+The (at least the one I have) P8b uses a different SPI flash chip. The bootloader is configured to accept a range of chips. 
 
 In addition, the touch driver is a bit different. The P8 touch driver cannot wake up from sleep mode, so instead the accelerometer is used to detect taps and double taps to wake up. The touch driver configuration set in the factory may also vary. A compile time variable is provided. See the file `HardwareVariants.md` for more info.
 
