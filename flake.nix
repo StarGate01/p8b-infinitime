@@ -2,12 +2,14 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs";
     nixpkgs-fontconv.url = "github:jvanbruegge/nixpkgs/lv_font_conv";
+    nixpkgs-pyanrfutil.url = "github:StarGate01/nixpkgs/pyanrfutil";
   };
 
-  outputs = { self, nixpkgs, nixpkgs-fontconv }:
+  outputs = { self, nixpkgs, nixpkgs-fontconv, nixpkgs-pyanrfutil }:
     let
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
       pkgs-fontconv = nixpkgs-fontconv.legacyPackages.x86_64-linux;
+      pkgs-pyanrfutil = nixpkgs-pyanrfutil.legacyPackages.x86_64-linux;
     in
     {
       devShell.x86_64-linux =
@@ -35,7 +37,7 @@
               pysdl2
               pytest
               intelhex
-#              adafruit-nrfutil
+              pkgs-pyanrfutil.python3Packages.adafruit-nrfutil
             ]))
           ];
         };

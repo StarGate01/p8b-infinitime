@@ -31,10 +31,27 @@
         "type": "github"
       }
     },
+    "nixpkgs-pyanrfutil": {
+      "locked": {
+        "lastModified": 1655895524,
+        "narHash": "sha256-Z5rnOOU5yjEAMcPHkvtZ/FfDoS7qrFjqgx9zGh7MT04=",
+        "owner": "StarGate01",
+        "repo": "nixpkgs",
+        "rev": "12ee6ae5443ecdbf43525e468f93ea757b168577",
+        "type": "github"
+      },
+      "original": {
+        "owner": "StarGate01",
+        "ref": "pyanrfutil",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "nixpkgs": "nixpkgs",
-        "nixpkgs-fontconv": "nixpkgs-fontconv"
+        "nixpkgs-fontconv": "nixpkgs-fontconv",
+        "nixpkgs-pyanrfutil": "nixpkgs-pyanrfutil"
       }
     }
   },
