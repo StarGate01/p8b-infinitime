@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 TARGET=${1:-pinetime}
 echo "Using target $TARGET"
@@ -8,7 +8,7 @@ cd ../InfiniTime
 mkdir -p build
 cd build
 
-COMMON_OPTIONS="-DCMAKE_BUILD_TYPE=Release -DARM_NONE_EABI_TOOLCHAIN_PATH=/usr -DNRF5_SDK_PATH=/opt/nrf5-sdk -DUSE_JLINK=1 -DNRFJPROG=/usr/bin/nrfjprog -DBUILD_DFU=1" 
+COMMON_OPTIONS="-DCMAKE_BUILD_TYPE=Release -DARM_NONE_EABI_TOOLCHAIN_PATH=/usr -DNRF5_SDK_PATH=~/Documents/nRF5_SDK_17.1.0 -DUSE_JLINK=1 -DNRFJPROG=/usr/bin/nrfjprog -DBUILD_DFU=1" 
 if [ "$TARGET" = "pinetime" ]; then
     cmake -DTARGET_DEVICE=PINETIME $COMMON_OPTIONS ..
 elif [ "$TARGET" = "p8" ] || [ "$TARGET" = "p8b" ]; then
