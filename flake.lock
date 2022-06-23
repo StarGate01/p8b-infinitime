@@ -2,11 +2,11 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1655890588,
-        "narHash": "sha256-9XJ5nuoqRFYbSg2pCpsiDvu0NZKEJj2FnknR9coxBVE=",
+        "lastModified": 1655935684,
+        "narHash": "sha256-lx+mLMsHaC8iEQa0ZkjFnKC0ME7o04kZmBfGomyhMII=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "66e3cdf93131c35f34286697e1984b83e46eb36c",
+        "rev": "f1dd761ae8e02f8182832a73bee1c9d508c308bd",
         "type": "github"
       },
       "original": {
@@ -31,18 +31,34 @@
         "type": "github"
       }
     },
-    "nixpkgs-pyanrfutil": {
+    "nixpkgs-nrf": {
       "locked": {
-        "lastModified": 1655895524,
-        "narHash": "sha256-Z5rnOOU5yjEAMcPHkvtZ/FfDoS7qrFjqgx9zGh7MT04=",
+        "lastModified": 1655941362,
+        "narHash": "sha256-bu5edmwS/tBtcBlxTSvNh19vMJKBTmSeN6ci+DV/7Jw=",
         "owner": "StarGate01",
         "repo": "nixpkgs",
-        "rev": "12ee6ae5443ecdbf43525e468f93ea757b168577",
+        "rev": "d3225eb8ffb1643eefc0816cfacd0eaffbf60a90",
         "type": "github"
       },
       "original": {
         "owner": "StarGate01",
-        "ref": "pyanrfutil",
+        "ref": "nrf-command-line-tools",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-pyanrfutil": {
+      "locked": {
+        "lastModified": 1655909939,
+        "narHash": "sha256-Uaxy9p8yNVJhf9jxdmfMtphh3pDSnr+GmfUK7+bMmKA=",
+        "owner": "StarGate01",
+        "repo": "nixpkgs",
+        "rev": "87f0ae6785b542d769c0bc337d7deef732a68326",
+        "type": "github"
+      },
+      "original": {
+        "owner": "StarGate01",
+        "ref": "pyanrfutil-fix",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -51,6 +67,7 @@
       "inputs": {
         "nixpkgs": "nixpkgs",
         "nixpkgs-fontconv": "nixpkgs-fontconv",
+        "nixpkgs-nrf": "nixpkgs-nrf",
         "nixpkgs-pyanrfutil": "nixpkgs-pyanrfutil"
       }
     }
