@@ -31,6 +31,22 @@
         "type": "github"
       }
     },
+    "nixpkgs-newt": {
+      "locked": {
+        "lastModified": 1655948397,
+        "narHash": "sha256-h4pqupyqrHXOOorYPErjWwwN20WjZXFyAoNFJ8vn6R8=",
+        "owner": "StarGate01",
+        "repo": "nixpkgs",
+        "rev": "964498eb50b784eb63c9bdabfa08a8429681782b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "StarGate01",
+        "ref": "mynewt-newt",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nixpkgs-nrf": {
       "locked": {
         "lastModified": 1655941362,
@@ -67,6 +83,7 @@
       "inputs": {
         "nixpkgs": "nixpkgs",
         "nixpkgs-fontconv": "nixpkgs-fontconv",
+        "nixpkgs-newt": "nixpkgs-newt",
         "nixpkgs-nrf": "nixpkgs-nrf",
         "nixpkgs-pyanrfutil": "nixpkgs-pyanrfutil"
       }

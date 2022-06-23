@@ -38,6 +38,8 @@ Requirements for compilation:
 - CMake
 - Python3 + Pip3
 
+If you use Nix, a `flake.nix` is provided.
+
 Run `scripts/init.sh` to set up the repositories, do not clone this repo with all recursive submodules. This loads all the required submodules, and downloads the newt and python packages.
 
 ### Compiling

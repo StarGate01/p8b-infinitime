@@ -4,9 +4,10 @@
     nixpkgs-fontconv.url = "github:jvanbruegge/nixpkgs/lv_font_conv";
     nixpkgs-pyanrfutil.url = "github:StarGate01/nixpkgs/pyanrfutil-fix";
     nixpkgs-nrf.url = "github:StarGate01/nixpkgs/nrf-command-line-tools";
+    nixpkgs-newt.url = "github:StarGate01/nixpkgs/mynewt-newt";
   };
 
-  outputs = { self, nixpkgs, nixpkgs-fontconv, nixpkgs-pyanrfutil, nixpkgs-nrf }:
+  outputs = { self, nixpkgs, nixpkgs-fontconv, nixpkgs-pyanrfutil, nixpkgs-nrf, nixpkgs-newt }:
     let
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
       pkgs-fontconv = nixpkgs-fontconv.legacyPackages.x86_64-linux;
@@ -16,6 +17,7 @@
         config.allowUnfree = true;
         config.segger-jlink.acceptLicense = true;
       };
+      pkgs-newt = nixpkgs-newt.legacyPackages.x86_64-linux;
     in
     {
       devShell.x86_64-linux =
@@ -28,10 +30,11 @@
           buildInputs = with pkgs; [
             gcc-arm-embedded
             pkgs-fontconv.nodePackages.lv_font_conv
-            mynewt-newt
+            pkgs-newt.mynewt-newt
             cmake
             openocd
             pkgs-nrf.nrf-command-line-tools
+            pkgs-newt.mynewt-newt
             (python3.withPackages (ps: with ps; [
               cbor
               click
