@@ -3,7 +3,7 @@
     nixpkgs.url = "github:nixos/nixpkgs";
     nixpkgs-fontconv.url = "github:jvanbruegge/nixpkgs/lv_font_conv";
     nixpkgs-pyanrfutil.url = "github:StarGate01/nixpkgs/pyanrfutil-fix";
-    nixpkgs-nrf.url = "github:StarGate01/nixpkgs/nrf-command-line-tools";
+    nixpkgs-nrf.url = "github:StarGate01/nixpkgs/nrf-command-line-tools-test";
     nixpkgs-newt.url = "github:StarGate01/nixpkgs/mynewt-newt";
   };
 
@@ -33,6 +33,7 @@
             pkgs-newt.mynewt-newt
             cmake
             openocd
+            pkgs-nrf.segger-jlink
             pkgs-nrf.nrf-command-line-tools
             pkgs-newt.mynewt-newt
             (python3.withPackages (ps: with ps; [

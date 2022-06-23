@@ -13,7 +13,7 @@
             "servertype": "jlink",
             "device": "nRF52832_xxAA",
             "svdFile": "${workspaceRoot}/InfiniTime/nrf52.svd",
-            "armToolchainPath": "/usr/bin",
+            "armToolchainPath": "${env:ARM_NONE_EABI_TOOLCHAIN_PATH}/bin",
             "rtos": "FreeRTOS",
             "rttConfig":{
                 "enabled": true,
@@ -38,7 +38,7 @@
             "servertype": "jlink",
             "device": "nRF52832_xxAA",
             "svdFile": "${workspaceRoot}/InfiniTime/nrf52.svd",
-            "armToolchainPath": "/usr/bin",
+            "armToolchainPath": "${env:ARM_NONE_EABI_TOOLCHAIN_PATH}/bin",
             "rtos": "FreeRTOS",
             "rttConfig":{
                 "enabled": true,
@@ -62,7 +62,7 @@
             "servertype": "jlink",
             "device": "nRF52832_xxAA",
             "svdFile": "${workspaceRoot}/InfiniTime/nrf52.svd",
-            "armToolchainPath": "/usr/bin",
+            "armToolchainPath": "${env:ARM_NONE_EABI_TOOLCHAIN_PATH}/bin",
             "rttConfig":{
                 "enabled": true,
                 "address": "0",
