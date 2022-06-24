@@ -63,6 +63,22 @@
         "type": "github"
       }
     },
+    "nixpkgs-nrfsdk": {
+      "locked": {
+        "lastModified": 1656085187,
+        "narHash": "sha256-/RSAWHGLUKbh6CaZjNwGyOMR6ipNZWFUvk095vhtVgo=",
+        "owner": "StarGate01",
+        "repo": "nixpkgs",
+        "rev": "2e506db27008bd626f50eeb45f333d7cf4f5f598",
+        "type": "github"
+      },
+      "original": {
+        "owner": "StarGate01",
+        "ref": "nrf-sdk",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nixpkgs-pyanrfutil": {
       "locked": {
         "lastModified": 1655909939,
@@ -85,6 +101,7 @@
         "nixpkgs-fontconv": "nixpkgs-fontconv",
         "nixpkgs-newt": "nixpkgs-newt",
         "nixpkgs-nrf": "nixpkgs-nrf",
+        "nixpkgs-nrfsdk": "nixpkgs-nrfsdk",
         "nixpkgs-pyanrfutil": "nixpkgs-pyanrfutil"
       }
     }
