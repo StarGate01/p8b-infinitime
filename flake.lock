@@ -2,11 +2,11 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1655935684,
-        "narHash": "sha256-lx+mLMsHaC8iEQa0ZkjFnKC0ME7o04kZmBfGomyhMII=",
+        "lastModified": 1656109751,
+        "narHash": "sha256-sZ7eiuPUY6M1IxO05o8Bhtcx33azda3+Sw+fceI4yRo=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "f1dd761ae8e02f8182832a73bee1c9d508c308bd",
+        "rev": "5c39c812605281ad8b2ca05525281c42cb991ae6",
         "type": "github"
       },
       "original": {
@@ -49,11 +49,11 @@
     },
     "nixpkgs-nrf": {
       "locked": {
-        "lastModified": 1656039977,
-        "narHash": "sha256-LJP01oN6udXvOzJXaBBRp19RPxI8m2041wlVV9gOIvc=",
+        "lastModified": 1656092871,
+        "narHash": "sha256-rXT41S2vsdN31IWQX/o5wdqAcMTtnBjeVO6kvjodCxc=",
         "owner": "StarGate01",
         "repo": "nixpkgs",
-        "rev": "67e2cac2dc6d08a3102313d876ede475b878cb97",
+        "rev": "e4b433a4f8388035aea8a6931c38bf1bf6e80910",
         "type": "github"
       },
       "original": {
@@ -65,11 +65,11 @@
     },
     "nixpkgs-nrfsdk": {
       "locked": {
-        "lastModified": 1656085187,
-        "narHash": "sha256-/RSAWHGLUKbh6CaZjNwGyOMR6ipNZWFUvk095vhtVgo=",
+        "lastModified": 1656112063,
+        "narHash": "sha256-qaAMbCgJ2owHGT7uG8paMD3gv0Pq9Y+sEi+tCseQETM=",
         "owner": "StarGate01",
         "repo": "nixpkgs",
-        "rev": "2e506db27008bd626f50eeb45f333d7cf4f5f598",
+        "rev": "b8f5d289f5e13e3766e9dd54d59ca3a772f3432c",
         "type": "github"
       },
       "original": {
