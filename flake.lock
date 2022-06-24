@@ -49,16 +49,16 @@
     },
     "nixpkgs-nrf": {
       "locked": {
-        "lastModified": 1656032987,
-        "narHash": "sha256-V4/ma6+u4zDGJb5UHBpX0nZEuBkGY9Z1CfiYajHfPBc=",
+        "lastModified": 1656039977,
+        "narHash": "sha256-LJP01oN6udXvOzJXaBBRp19RPxI8m2041wlVV9gOIvc=",
         "owner": "StarGate01",
         "repo": "nixpkgs",
-        "rev": "59e74e28f48712e72ac94dace82de93a7de46d7d",
+        "rev": "67e2cac2dc6d08a3102313d876ede475b878cb97",
         "type": "github"
       },
       "original": {
         "owner": "StarGate01",
-        "ref": "nrf-command-line-tools-test",
+        "ref": "nrf-command-line-tools",
         "repo": "nixpkgs",
         "type": "github"
       }
