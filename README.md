@@ -44,9 +44,9 @@ Run `scripts/init.sh` to set up the repositories, do not clone this repo with al
 
 ### Compiling
 
-Use the scripts in `scripts/`, run `build_all.sh p8` to build all the firmware for the P8 watch. The Wasp reloader factory package will package the builds of mcuboot and the Infinitime minimal recovery loader.
+Use the scripts in `scripts/`, run e.g. `build_all.sh moy-ton5` to build all the firmware for the P8b watch. The Wasp reloader factory package will package the builds of mcuboot and the Infinitime minimal recovery loader.
 
-All scripts accept either `pinetime`, `p8`, `p8a` or `p8b` as the first argument (Default: `pinetime`). This argument configures the target hardware platform.
+All scripts accept either `pinetime`, the `moy-` designators, or `p8` as the first argument (Default: `pinetime`). This argument configures the target hardware platform.
 
 You can change the compile time parameters in `build_infinitime.sh` if your smartwatch has a different hardware configuration.
 

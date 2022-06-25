@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
 
 TARGET=${1:-pinetime}
+TARGET=${TARGET,,}
 echo "Using target $TARGET"
 cd "${0%/*}"
 
 source ./infinitime_version.sh
 
 TARGETINT=$TARGET
-if [ "$TARGETINT" = "p8a" ] || [ "$TARGETINT" = "p8b" ]; then
+if [ "$TARGETINT" != "pinetime" ]; then
     TARGETINT="p8"
 fi;
 
