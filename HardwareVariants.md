@@ -4,9 +4,9 @@
 
 - Seen as: `Pinetime` (`TARGET_DEVICE=PINETIME`)
 - Pinmap: Pinetime (`DRIVER_PINMAP_PINETIME`)
-- Acceleration sensor: BMA421 (`DRIVER_ACC=BMA421`)
+- Acceleration sensor: BMA421 (`DRIVER_ACC_BMA421`)
 - LF clock: XTAL (`LF_CLK=XTAL`)
-- Touch sensor: dynamic (`DRIVER_TOUCH=DYNAMIC`)
+- Touch sensor: dynamic (`DRIVER_TOUCH_DYNAMIC`)
     - Chip marking: `CST816S`
     - Reports as `B4-0.1`
     - Configurable mode of operation
