@@ -42,6 +42,7 @@
             pkgs-nrf.nrf-command-line-tools
             pkgs-newt.mynewt-newt
             pkgs-nrfsdk.nrf5-sdk
+            clang-tools
             (python3.withPackages (ps: with ps; [
               cbor
               click
