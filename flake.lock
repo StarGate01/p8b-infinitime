@@ -49,11 +49,11 @@
     },
     "nixpkgs-nrf": {
       "locked": {
-        "lastModified": 1656092871,
-        "narHash": "sha256-rXT41S2vsdN31IWQX/o5wdqAcMTtnBjeVO6kvjodCxc=",
+        "lastModified": 1656288026,
+        "narHash": "sha256-WuOTR00I8EhSBqiZhYue/qtFkKynp1ufWqwrLQxPo9g=",
         "owner": "StarGate01",
         "repo": "nixpkgs",
-        "rev": "e4b433a4f8388035aea8a6931c38bf1bf6e80910",
+        "rev": "9ccebfd4004a8d5e037167e5a28cecf86bcb11a8",
         "type": "github"
       },
       "original": {
