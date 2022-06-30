@@ -16,7 +16,7 @@ The devices under test (DUT) were configured as follows:
  - No bootloader
  - Screen off
  - Hard power cycle after programming
- - Waited for BLE advertising windows to end
+ - Waited for BLE advertising window to end
 
 Measurements were taken for the following DUTs:
  - P8B MOY-TON5 watch
@@ -25,10 +25,10 @@ Measurements were taken for the following DUTs:
 Measurements were taken in the following DUT modes (product):
  - Nimble patches enabled (`MYNEWT_VAL_BLE_LL_RFMGMT_ENABLE_TIME=1500`)
  - Nimble patches disabled (No such variable set)
- - Bluetooth connected to Smartphone
+ - Bluetooth connected to smartphone
  - Bluetooth disconnected
- - High-frequency motion date via BLE enabled
- - High-frequency motion date via BLE disabled (Pinetime only)
+ - High-frequency motion data via BLE enabled
+ - High-frequency motion data via BLE disabled (Pinetime only)
 
 Firmware versions:
  - For P8B: Built from my P8 fork at `p8b` with HF motion data via BLE enabled.
@@ -61,6 +61,6 @@ The high current values for the maximum current come from very short current spi
 
 The **Nimble patches** lead to a mean average current reduction of `-0.188 mA` across all tests, which is `-12.7%` on average.
 
-The **HF motion via BLE** functionality leads to a mean average current increase of `+0.492 mA` across all tests, which is `+37.8%` on average. This indicates that the accelerometer uses quite a bit of power.
+The **HF motion via BLE** functionality leads to a mean average current increase of `+0.492 mA` across all tests, which is `+37.8%` on average. This indicates that the accelerometer uses quite a bit of power, and so does the Bluetooth radio when transmitting the large packets.
 
-Since the DUTs were powered via the USB pads, the USB voltage regulator might have added noise and an offset. To eliminate these factors, the NRF power pins would have to be tapped, or the measurements performed on a NRF-DK.
+Since the DUTs were powered via the USB pads, the USB voltage regulator might have added noise and an offset. To eliminate these factors in the future, the NRF power pins would have to be tapped, or the measurements performed on a NRF-DK.
