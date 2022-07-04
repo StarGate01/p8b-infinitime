@@ -33,6 +33,7 @@
             mynewt-newt
             nrf5-sdk
             clang-tools
+            pkgs-pyanrfutil.python3Packages.adafruit-nrfutil
             (python3.withPackages (ps: with ps; [
               cbor
               click

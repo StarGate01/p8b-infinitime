@@ -32,7 +32,7 @@
         {
             "name": "MCUBoot Bootloader",
             "cwd": "${workspaceRoot}//pinetime-mcuboot-bootloader",
-            "executable": "./bin/targets/p8/app/@mcuboot/boot/mynewt/mynewt.elf.hex ",
+            "executable": "./bin/targets/p8/app/@mcuboot/boot/mynewt/mynewt.elf",
             "request": "attach",
             "type": "cortex-debug",
             "servertype": "jlink",
