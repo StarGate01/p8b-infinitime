@@ -1,18 +1,16 @@
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs";
-    nixpkgs-fontconv.url = "github:jvanbruegge/nixpkgs/lv_font_conv";
     nixpkgs-pyanrfutil.url = "github:StarGate01/nixpkgs/pyanrfutil";
   };
 
-  outputs = { self, nixpkgs, nixpkgs-fontconv, nixpkgs-pyanrfutil }:
+  outputs = { self, nixpkgs, nixpkgs-pyanrfutil }:
     let
       pkgs = import nixpkgs {
         system = "x86_64-linux";
         config.allowUnfree = true;
         config.segger-jlink.acceptLicense = true;
       };
-      pkgs-fontconv = nixpkgs-fontconv.legacyPackages.x86_64-linux;
       pkgs-pyanrfutil = nixpkgs-pyanrfutil.legacyPackages.x86_64-linux;
     in
     {
@@ -25,7 +23,7 @@
 
           buildInputs = with pkgs; [
             gcc-arm-embedded
-            pkgs-fontconv.nodePackages.lv_font_conv
+            nodePackages.lv_font_conv
             cmake
             openocd
             segger-jlink

@@ -2,31 +2,15 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1656945608,
-        "narHash": "sha256-rlY7SLd0J3K5sjdbWRjvC7RHWBOD9LACcICJZUIjTJs=",
+        "lastModified": 1659219666,
+        "narHash": "sha256-pzYr5fokQPHv7CmUXioOhhzDy/XyWOIXP4LZvv/T7Mk=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "58cd7ea287754cf2c883dce90f83ad731178ce76",
+        "rev": "7b9be38c7250b22d829ab6effdee90d5e40c6e5c",
         "type": "github"
       },
       "original": {
         "owner": "nixos",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs-fontconv": {
-      "locked": {
-        "lastModified": 1655828052,
-        "narHash": "sha256-TJXAiAggAGd1xw3z/PBHUs4Xf1ouQg04o97OXdfDpH8=",
-        "owner": "jvanbruegge",
-        "repo": "nixpkgs",
-        "rev": "c916601fd4778f087563740c4f57db510552238b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "jvanbruegge",
-        "ref": "lv_font_conv",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -50,7 +34,6 @@
     "root": {
       "inputs": {
         "nixpkgs": "nixpkgs",
-        "nixpkgs-fontconv": "nixpkgs-fontconv",
         "nixpkgs-pyanrfutil": "nixpkgs-pyanrfutil"
       }
     }
