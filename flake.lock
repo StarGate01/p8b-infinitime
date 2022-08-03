@@ -17,11 +17,11 @@
     },
     "nixpkgs-pyanrfutil": {
       "locked": {
-        "lastModified": 1656541954,
-        "narHash": "sha256-xYbo10T+TOM//pH6z0HDf3Xa8AKy3AEXLeuKR5tVdoE=",
+        "lastModified": 1659347500,
+        "narHash": "sha256-f244nLdqPA3UT7cdIzrmTh4JRudS4eZG9RqkPDF6y6g=",
         "owner": "StarGate01",
         "repo": "nixpkgs",
-        "rev": "de7f02a48fb5790409af907829a3a5f15e53b4cf",
+        "rev": "057f09bd385e7303749ac9724ede2d292b7d5c9d",
         "type": "github"
       },
       "original": {
