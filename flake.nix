@@ -1,17 +1,15 @@
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs";
-    nixpkgs-pyanrfutil.url = "github:StarGate01/nixpkgs/pyanrfutil";
   };
 
-  outputs = { self, nixpkgs, nixpkgs-pyanrfutil }:
+  outputs = { self, nixpkgs }:
     let
       pkgs = import nixpkgs {
         system = "x86_64-linux";
         config.allowUnfree = true;
         config.segger-jlink.acceptLicense = true;
       };
-      pkgs-pyanrfutil = nixpkgs-pyanrfutil.legacyPackages.x86_64-linux;
     in
     {
       devShell.x86_64-linux =
@@ -31,7 +29,7 @@
             mynewt-newt
             nrf5-sdk
             clang-tools
-            pkgs-pyanrfutil.python3Packages.adafruit-nrfutil
+            python3Packages.adafruit-nrfutil
             (python3.withPackages (ps: with ps; [
               cbor
               click
@@ -45,7 +43,7 @@
               pysdl2
               pytest
               intelhex
-              pkgs-pyanrfutil.python3Packages.adafruit-nrfutil
+              adafruit-nrfutil
             ]))
           ];
         };

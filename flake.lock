@@ -2,39 +2,22 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1659219666,
-        "narHash": "sha256-pzYr5fokQPHv7CmUXioOhhzDy/XyWOIXP4LZvv/T7Mk=",
+        "lastModified": 1660141275,
+        "narHash": "sha256-zs4dalh80Su/dSfM7xU8NplsqJogsEAZvW6hNs2RphY=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "7b9be38c7250b22d829ab6effdee90d5e40c6e5c",
+        "rev": "4bd9ff729994f66894d696143357e4292f0ad8d9",
         "type": "github"
       },
       "original": {
         "owner": "nixos",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs-pyanrfutil": {
-      "locked": {
-        "lastModified": 1659347500,
-        "narHash": "sha256-f244nLdqPA3UT7cdIzrmTh4JRudS4eZG9RqkPDF6y6g=",
-        "owner": "StarGate01",
-        "repo": "nixpkgs",
-        "rev": "057f09bd385e7303749ac9724ede2d292b7d5c9d",
-        "type": "github"
-      },
-      "original": {
-        "owner": "StarGate01",
-        "ref": "pyanrfutil",
         "repo": "nixpkgs",
         "type": "github"
       }
     },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs",
-        "nixpkgs-pyanrfutil": "nixpkgs-pyanrfutil"
+        "nixpkgs": "nixpkgs"
       }
     }
   },
