@@ -21,6 +21,9 @@ echo "Copying $TARGET binaries"
 rm -rf ./binaries/$TARGET
 mkdir -p ./binaries/$TARGET
 cp ../InfiniTime/build/src/pinetime-mcuboot-app-dfu-$INFINITIME_VERSION.zip ./binaries/$TARGET/
+cp ../InfiniTime/build/src/resources/infinitime-resources-$INFINITIME_VERSION.zip ./binaries/$TARGET/
+cp ../InfiniTime/build/src/resources/resources.json ./binaries/$TARGET/
 cp ../wasp-os/build-$TARGETINT/reloader-factory.zip ./binaries/$TARGET/
+cp ../wasp-os/build-$TARGETINT/reloader-mcuboot.zip ./binaries/$TARGET/
 cp ../wasp-os/build-$TARGETINT/bootloader-daflasher.zip ./binaries/$TARGET/
 cp ../wasp-os/build-$TARGETINT/bootloader.hex ./binaries/$TARGET/

@@ -2,11 +2,11 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1660141275,
-        "narHash": "sha256-zs4dalh80Su/dSfM7xU8NplsqJogsEAZvW6hNs2RphY=",
+        "lastModified": 1670368662,
+        "narHash": "sha256-rXa7XNGHa81ZV6miAoif3/26VRZyxnUdbklOgP6XhWA=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "4bd9ff729994f66894d696143357e4292f0ad8d9",
+        "rev": "7b7588edb1f2cca35ea2b168e2c662b54d7c4fb3",
         "type": "github"
       },
       "original": {
@@ -15,9 +15,26 @@
         "type": "github"
       }
     },
+    "nixpkgs-lv_img_conv": {
+      "locked": {
+        "lastModified": 1670370273,
+        "narHash": "sha256-YsJYLqAzt0C2Dl0gQx0Fjxk5SG+UUuSsRtSuAGZsiGw=",
+        "owner": "StarGate01",
+        "repo": "nixpkgs",
+        "rev": "5cf51d9e14e76832309244181daab1de4061039d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "StarGate01",
+        "ref": "lv_img_conv",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "nixpkgs-lv_img_conv": "nixpkgs-lv_img_conv"
       }
     }
   },
