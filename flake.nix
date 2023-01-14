@@ -24,7 +24,7 @@
           buildInputs = with pkgs; [
             gcc-arm-embedded
             nodePackages.lv_font_conv
-            pkgs-lv_img_conv.nodePackages.lv_img_conv
+            pkgs-lv_img_conv.lv_img_conv
             cmake
             openocd
             segger-jlink

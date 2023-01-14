@@ -17,11 +17,11 @@
     },
     "nixpkgs-lv_img_conv": {
       "locked": {
-        "lastModified": 1670370273,
-        "narHash": "sha256-YsJYLqAzt0C2Dl0gQx0Fjxk5SG+UUuSsRtSuAGZsiGw=",
+        "lastModified": 1670684301,
+        "narHash": "sha256-QkOTmoWR1CJ49Obtv1xQTVUtTLjToA5HzLB36x+fnd4=",
         "owner": "StarGate01",
         "repo": "nixpkgs",
-        "rev": "5cf51d9e14e76832309244181daab1de4061039d",
+        "rev": "d0173b4192b42995f0f0565966616e0b9df9fccc",
         "type": "github"
       },
       "original": {
