@@ -11,4 +11,4 @@ git submodule update --init --recursive
 
 cd ../pinetime-mcuboot-bootloader
 git submodule update --init --recursive
-newt upgrade
+newt upgrade --shallow 10000
