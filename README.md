@@ -60,6 +60,10 @@ In general, sometimes the Bluetooth connection crashes, maybe due to interferenc
 
 **Do this at your own risk**
 
+Step 0
+- State: Stock P8b (Stock)
+- Take a note of your stock firmware identification string. E.g. something like MOY-TFK5-1.7.7. This will not be available after overwriting the bootloader, however knowing it will be useful later when picking the right infinitime build, and/or will be useful if your watch is a new variant that we have not seen yet.
+
 Step 1
 
 - State: Stock P8b (Stock)
