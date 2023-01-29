@@ -55,7 +55,7 @@
     - Fused mode of operation in reporting mode
     - Resets on pin signal
     - Behavior: Gesture event after gesture, touch events during gesture
-    - Alternate behavior observed: Event at beginning of gesture only
+    - Alternate behavior observed (`UNK2`): Event at beginning of gesture only
 - Flash: P25Q32H
 
 ## P8b mirrored

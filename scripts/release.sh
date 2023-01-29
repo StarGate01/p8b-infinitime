@@ -17,6 +17,8 @@ rm -rf binaries
 ./clean.sh
 ./build_all.sh MOY_UNK
 ./clean.sh
+./build_all.sh MOY_UNK2
+./clean.sh
 
 for bld in binaries/*; do
     zip -j $bld.zip $bld/*
