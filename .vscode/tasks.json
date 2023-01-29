@@ -27,6 +27,12 @@
             "type": "shell",
             "command": "scripts/clean.sh",
             "problemMatcher": []
+        },
+        {
+            "label": "Start ITD daemon",
+            "type": "shell",
+            "command": "itd",
+            "problemMatcher": []
         }
     ]
 }
