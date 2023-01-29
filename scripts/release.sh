@@ -9,13 +9,13 @@ rm -rf binaries
 ./clean.sh
 ./build_all.sh PINETIME
 ./clean.sh
-./build_all.sh MOY-TFK5
+./build_all.sh MOY_TFK5
 ./clean.sh
-./build_all.sh MOY-TIN5
+./build_all.sh MOY_TIN5
 ./clean.sh
-./build_all.sh MOY-TON5
+./build_all.sh MOY_TON5
 ./clean.sh
-./build_all.sh MOY-UNK
+./build_all.sh MOY_UNK
 ./clean.sh
 
 for bld in binaries/*; do

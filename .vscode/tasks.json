@@ -6,7 +6,7 @@
         {
             "label": "Compile Infinitime Dev",
             "type": "shell",
-            "command": "scripts/build_infinitime_dev.sh MOY-TON5",
+            "command": "scripts/build_infinitime_dev.sh MOY_TON5",
             "problemMatcher": "$gcc",
             "group": {
                 "kind": "build",

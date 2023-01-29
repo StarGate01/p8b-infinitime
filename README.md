@@ -62,7 +62,7 @@ In general, sometimes the Bluetooth connection crashes, maybe due to interferenc
 
 Step 0
 - State: Stock P8b (Stock)
-- Take a note of your stock firmware identification string. E.g. something like MOY-TFK5-1.7.7. This will not be available after overwriting the bootloader, however knowing it will be useful later when picking the right infinitime build, and/or will be useful if your watch is a new variant that we have not seen yet.
+- Take a note of your stock firmware identification string. E.g. something like MOY-TFK5-1.7.7. This will not be available after overwriting the bootloader, however knowing it will be useful later when picking the right InfiniTime build, and/or will be useful if your watch is a new variant that we have not seen yet. See also the file `HardwareVariants.md` to figure out which build is right for you.
 
 Step 1
 

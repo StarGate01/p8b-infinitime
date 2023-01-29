@@ -17,7 +17,7 @@
 
 ## P8a
 
-- Seen as: `MOY-TFK5`(`TARGET_DEVICE=MOY-TFK5`)
+- Seen as: `MOY-TFK5`(`TARGET_DEVICE=MOY_TFK5`)
 - Pinmap: P8 (`DRIVER_PINMAP_P8`)
 - Acceleration sensor: BMA421 (`DRIVER_ACC_BMA421`)
 - LF clock: XTAL (`LF_CLK=XTAL`)
@@ -31,7 +31,7 @@
 
 ## P8a variant 2
 
-- Seen as: `MOY-TIN5` (`TARGET_DEVICE=MOY-TIN5`)
+- Seen as: `MOY-TIN5` (`TARGET_DEVICE=MOY_TIN5`)
 - Pinmap: P8 (`DRIVER_PINMAP_P8`)
 - Acceleration sensor: SC7A20 (`DRIVER_ACC_SC7A20`)
 - LF clock: XTAL (`LF_CLK=XTAL`)
@@ -45,7 +45,7 @@
 
 ## P8b
 
-- Seen as: `MOY-TON5` (`TARGET_DEVICE=MOY-TON5`)
+- Seen as: `MOY-TON5` (`TARGET_DEVICE=MOY_TON5`)
 - Pinmap: P8 (`DRIVER_PINMAP_P8`)
 - Acceleration sensor: SC7A20 (`DRIVER_ACC_SC7A20`)
 - LF clock: RC (`LF_CLK=RC`)
@@ -55,11 +55,12 @@
     - Fused mode of operation in reporting mode
     - Resets on pin signal
     - Behavior: Gesture event after gesture, touch events during gesture
+    - Alternate behavior observed: Event at beginning of gesture only
 - Flash: P25Q32H
 
 ## P8b mirrored
 
-- Seen as: *Unknown* (`TARGET_DEVICE=MOY-UNK`)
+- Seen as: *Unknown* (`TARGET_DEVICE=MOY_UNK`)
 - Pinmap: P8 (`DRIVER_PINMAP_P8`)
 - Acceleration sensor: SC7A20 (`DRIVER_ACC_SC7A20`)
 - LF clock: RC (`LF_CLK=RC`)
