@@ -2,39 +2,23 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1670368662,
-        "narHash": "sha256-rXa7XNGHa81ZV6miAoif3/26VRZyxnUdbklOgP6XhWA=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "7b7588edb1f2cca35ea2b168e2c662b54d7c4fb3",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs-lv_img_conv": {
-      "locked": {
-        "lastModified": 1670684301,
-        "narHash": "sha256-QkOTmoWR1CJ49Obtv1xQTVUtTLjToA5HzLB36x+fnd4=",
+        "lastModified": 1694709671,
+        "narHash": "sha256-AK5ALSjBScRIyAfZFoi3tROjDRv53+HOGL/TvQO9e/Q=",
         "owner": "StarGate01",
         "repo": "nixpkgs",
-        "rev": "d0173b4192b42995f0f0565966616e0b9df9fccc",
+        "rev": "9c074f6e38ed22c1c9cf845d0e562e21f7c637d8",
         "type": "github"
       },
       "original": {
         "owner": "StarGate01",
-        "ref": "lv_img_conv",
+        "ref": "nrfconnect",
         "repo": "nixpkgs",
         "type": "github"
       }
     },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs",
-        "nixpkgs-lv_img_conv": "nixpkgs-lv_img_conv"
+        "nixpkgs": "nixpkgs"
       }
     }
   },

@@ -1,17 +1,15 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs";
-    nixpkgs-lv_img_conv.url = "github:StarGate01/nixpkgs/lv_img_conv";
+    nixpkgs.url = "github:StarGate01/nixpkgs/nrfconnect";
   };
 
-  outputs = { self, nixpkgs, nixpkgs-lv_img_conv }:
+  outputs = { self, nixpkgs }:
     let
       pkgs = import nixpkgs {
         system = "x86_64-linux";
         config.allowUnfree = true;
         config.segger-jlink.acceptLicense = true;
       };
-      pkgs-lv_img_conv = nixpkgs-lv_img_conv.legacyPackages.x86_64-linux;
     in
     {
       devShell.x86_64-linux =
@@ -24,7 +22,7 @@
           buildInputs = with pkgs; [
             gcc-arm-embedded
             nodePackages.lv_font_conv
-            pkgs-lv_img_conv.lv_img_conv
+            lv_img_conv
             cmake
             openocd
             segger-jlink
