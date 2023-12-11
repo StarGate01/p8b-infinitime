@@ -30,7 +30,7 @@
             mynewt-newt
             nrf5-sdk
             clang-tools
-            python3Packages.adafruit-nrfutil
+            adafruit-nrfutil
             itd
             (python3.withPackages (ps: with ps; [
               cbor
@@ -45,7 +45,6 @@
               pysdl2
               pytest
               intelhex
-              adafruit-nrfutil
             ]))
           ];
         };
